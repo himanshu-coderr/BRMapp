@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% load staticfiles  %}  <!-- load is a command -->
+<!--to use the static content-->
+ 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{%static 'css/teststyle.css'%}">  <!-- static means we are refering to static directory , -->
+</head>
+<body>
+    <div>
+        
+        <div class="heading">
+            <h1>Hello Guest</h1>
+        </div>
+    
+        <div class="que">
+            <h2>{{que}}</h2>
+            <!-- <h2>Who developed c Language ?</h2> -->
+            {% if level %}
+                {{level}}
+            {% else %}
+                level not defined
+            {% endif %}
+        </div>  
+    
+        <div class="options">
+            <div class="options"><input type="radio" name= 'answer'><span>{{a}}</span></div>
+            <div class="options"><input type="radio" name= 'answer'><span>{{b}}</span></div>
+            <div class="options"><input type="radio" name= 'answer'><span>{{c}}</span></div>
+            <div class="options"><input type="radio" name= 'answer'><span>{{d}}</span></div>
+         </div>
+          
+        <div class="submit"><input type="submit" name="" id=""></div>
+    </div>
+</body>
+</html>

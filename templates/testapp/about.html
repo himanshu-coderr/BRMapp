@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% load app_tags %}   <!-- first we load the file in which we made out template tag-->
+ 
+    <h1>{{test| quotes}}</h1>
+
+    <!-- {%get_date as today %} -->
+    <!-- <h1>today is {% get_date %}</h1> -->
+    <!-- <h1>today is {{today |date:"D" }}</h1>
+    <h1>today is {{today |date:"d m y" }}</h1>
+    <h1>today is {{today |date:"Y" }}</h1> -->
+    
+    <!-- 
+    <h1>{{msg|capfirst}}</h1>
+    <h2>Above heading contains {{msg|wordcount}} words</h2> 
+    <!--  wordcount is a function, count the words and return as a numeric value -->
+    <!--
+    <h1>{{li|first}}</h1>
+    <h1>{{li|last}}</h1>
+    <h1>{{li|length}}</h1>
+      -->
+      <!--  -->
+</body>
+</html>
